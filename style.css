@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+
+@import url('https://fontlibrary.org//face/chicagoflf');
+/*font-family: 'Big Shoulders Display', cursive;
+font-family: 'ChicagoFLFRegular';*/
+
+body{
+background:url('img/') ;
+cursor: url('img/'), auto; 
+background-color:#EBF2FF;
+}
+
+
+#container{
+	-webkit-animation: fadein 5s; 
+	cursor: url(''), auto; 
+
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.title{
+	font-family: 'ChicagoFLFRegular';
+	text-align: center;
+	color: #0C0F4B;
+	font-size:1.75em;
+	font-weight: 150px;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+    color:#0C0F4B;
+}
+
+#side{
+text-align: right;
+font-family: 'ChicagoFLFRegular';
+color: #0C0F4B;
+font-size: 1.5em;
+padding-right:20px;
+
+}
+
+.draggable { width: 150px; height: 150px; padding: 0.5em; }
+
+/* Popup container */
+.popup { position: relative; display: inline-block; cursor: pointer; }
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  background: #BAC4D8;
+  color: #fff;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  width: 464px;
+  height: 600px;
+  left: -900px;
+  top: 25px;
+  text-align: center;
+  box-shadow: 15px 15px #9CB2DD;
+}
+
+/* Rectangle 9 */
+
+.rectangle{
+position: absolute;
+width: 464px;
+height: 6vh;
+top:-25px;
+background: #0C0F4B;
+
+}
+.circles{
+	top: -50px;
+}
+
+/* Ellipse 1 */
+
+ #ellipse1 button{
+position: absolute;
+width: 17px;
+height: 16px;
+left: 26px;
+margin-top: 58px;
+border-radius: 50px;
+z-index: 3;
+top:-70px;
+}
+
+/* Ellipse 2 
+
+.ellipse2{
+position: absolute;
+width: 17px;
+height: 16px;
+left: 52px;
+top: 38px;
+
+background: #FFFFFF;
+}
+
+/* Ellipse 3 
+
+.ellipse3{
+position: absolute;
+width: 16px;
+height: 16px;
+left: 77px;
+top: 38px;
+
+background: #FFFFFF;
+}*/
+
+h2 {
+	padding-top:30px;
+	font-size: 1.65em;
+  
+}
+
+p {
+	margin:14px;
+	line-height: 1.5em;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+#share {
+	visibility: hidden; 
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+}
+
+/*Text in Share file*/
+textarea {
+  width: 100%;
+  min-height: 15em;
+  display: block;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+button {
+  display: block;
+  margin: 1em 0 0;
+  border: 1px solid dark;
+  padding: 0.75em;
+  line-height: 1;
+  border-radius: 2px;
+  font-size: 16px;
+  font-family: 'ChicagoFLFRegular';
+}
+
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #0C0F4B;
+  display: inline-block;
+  width: 100%;
+  max-width: 805px;
+  height: 450px;
+  border-radius: 3px;
+  box-shadow: 15px 15px #9CB2DD;
+
+}
+
+.rectangle1{
+	width: 100%;
+	height: ;
+	z-index:4;
+	background-color: white/*#9CB2DD*/;
+}
+
+form h2{
+	color: white;
+	font-family: 'ChicagoFLFRegular';
+	text-align: center;
+	margin-top:100px;
+}
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 80%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+  height: 30%;
+}
+
+button .submit {
+  font-size: 16px;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+   margin: 1em 0 0;
+  border: 1px solid dark;
+  padding: 0.75em;
+  line-height: 1;
+  border-radius: 2px;
+  font-size: 16px;
+
+}
+
+button:hover {
+}
+
+button:active {
+
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+footer > a {
+  color: #BBBBBB;
+}
+
+.nicejob {
+  text-decoration: line-through;
+}
+
+code {
+  background-color: #daffff;
+}
+
+/*Files Buttons*/
+
+#happybtn img{
+	width: 18%;
+	margin-top:-400px;
+}
+
+
+#happybtn button{
+	font-size:1.5em;
+	color:#9CB2DD;
+	background-color: none;
+	border: none;
+	background: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  /* For mobile phones: */
+ #side{
+ 	text-align: center;
+ }
+
+ .popup .popuptext {
+
+}
+}
